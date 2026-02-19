@@ -32,10 +32,10 @@ When a transaction webhook is received:
     FastAPI Application
             | Validate & store transaction (PROCESSING)
             | Respond immediately (202 Accepted)
-            ↓FastAPI Application
-    Background Task
             ↓
-    PostgreSQL (PROCESSED)
+    Background Task
+            ↓(30s delay)
+    PostgreSQL (Status Updated - PROCESSED)
             ↓
     Status Query Endpoint
             ↓

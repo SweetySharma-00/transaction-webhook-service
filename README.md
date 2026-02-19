@@ -123,9 +123,10 @@ Allows querying the current state of a transaction for verification.
 
 ## 🎯 Key Guarantees
 
-- Single transaction is processed exactly once\
-- Duplicate webhooks are safely ignored\
-- Webhook response time remains consistently low\
+- Single Transaction: Send one webhook → verify it's processed after ~30 seconds\
+- Duplicate Prevention: Send the same webhook multiple times → verify only one transaction is processed\
+- Performance: Webhook endpoint responds quickly even under processing load\
+- Reliability: Service handles errors gracefully and doesn't lose transactions
 
 
 ## 👤 Author

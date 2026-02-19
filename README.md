@@ -130,7 +130,7 @@ Allows querying the current state of a transaction for verification.
 
 ## 👤 Author
 
-**Sweety Sharma**\
+**Sweety Sharma**
 
   
     

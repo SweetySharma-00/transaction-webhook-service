@@ -118,7 +118,7 @@ Allows querying the current state of a transaction for verification.
 
 
 ### 4️⃣ Run FastAPI Server:
-    uvicorn app.main:app 
+    uvicorn app.main:app --reload
 
 
 ## 🎯 Key Guarantees
